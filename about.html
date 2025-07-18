@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Hannah</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      /* prevent horizontal scroll */
+      overflow-x: hidden;
+    }
+    .about-container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      text-align: center; /* center header & texts */
+    }
+    .hero-greeting {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+    /* Flex container for cards */
+    .card-list {
+      display: flex;
+      justify-content: center; /* center cards horizontally */
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0 auto;
+    }
+    .card {
+      background: #181818;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+      padding: 1.8rem 1.5rem;
+      width: 280px; /* fixed width, allows wrapping */
+      color: #ddd;
+      /* Make sure cards align their internal content neatly */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.15s ease;
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      color: #fff;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .card-list {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .card {
+        width: 100%;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="about-container">
+    <p class="hero-greeting">Hello There</p>
+    <h1>Hey! I’m Hannah 👋</h1>
+    <div class="card-list">
+      <div class="card">
+        <h3>🍳 My Kitchen Experiments</h3>
+        <p>During my free time, you’ll probably find me in the kitchen. Cooking helps me relax—I try out new recipes.</p>
+      </div>
+      <div class="card">
+        <h3>🧵 Trying Out Punch Needling</h3>
+        <p>I started punch needling not long ago. It’s a craft where you push yarn through fabric and make patterns. It’s a bit slow but super calming—feels good to make something with your hands, especially after staring at screens.</p>
+      </div>
+      <div class="card">
+        <h3>🛍️ A Bit About Thrifting </h3>
+        <p>My friend and I are working on a little thrift store project called <strong>The Shared Rack</strong>. We’re just trying to give old clothes a second chance and make fashion feel a bit more friendly to the planet.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
